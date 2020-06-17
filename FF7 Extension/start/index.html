@@ -72,6 +72,11 @@
     <div id="tabs">
         <ul>
           <li>
+              <a href="#tab-setting">
+                  <div class="tab-control">Settings</div>
+              </a>
+          </li>
+          <li>
             <a href="#tab-background">
               <div class="tab-control">Background</div>
             </a>
@@ -80,11 +85,6 @@
             <a href="#tab-relative-apps">
               <div class="tab-control">Must-have Related Themes</div>
             </a>
-          </li>
-          <li>
-              <a href="#tab-setting">
-                  <div class="tab-control">Settings</div>
-              </a>
           </li>
         </ul>
         <div class="main">
@@ -122,61 +122,6 @@
                             </label>
                         </li>
                         <li>
-                          <label data-toggle="tooltip" data-placement="top" title="Display / Hide &quot;Sticky Notes&quot; in newtab page">
-                              <span>Sticky Notes</span>
-                              <label for="enable_stickynote" class="switch normal" title="on/off">
-                                  <input type="checkbox" id="enable_stickynote" />
-                                  <span class="slider round"></span>
-                                  <span class="on">ON</span>
-                                  <span class="off">OFF</span>
-                              </label>
-                          </label>
-                        </li>
-                        <li>
-                            <label data-toggle="tooltip" data-placement="top" title="Display / Hide &quot;Todo&quot; in newtab page">
-                                <span>Todo / Tasks</span>
-                                <label for="enable_todo" class="switch normal" title="on/off">
-                                    <input type="checkbox" id="enable_todo" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </label>
-                            </label>
-                        </li>
-                        <li>
-                            <label data-toggle="tooltip" data-placement="top" title="Display / Hide &quot;Most Visited&quot; in newtab page">
-                                <span>Most Visited</span>
-                                <label class="switch normal" title="on/off">
-                                    <input type="checkbox" id="enable_most_visited" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </label>
-                            </label>
-                        </li>
-                        <li>
-                            <label data-toggle="tooltip" data-placement="top" title="Display / Hide &quot;Apps&quot; in newtab page">
-                                <span>Apps</span>
-                                <label class="switch normal" title="on/off">
-                                    <input type="checkbox" id="enable_apps" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </label>
-                            </label>
-                        </li>
-                        <li>
-                            <label data-toggle="tooltip" data-placement="top" title="Display / Hide &quot;Share&quot; in newtab page">
-                                <span>Share</span>
-                                <label class="switch normal" title="on/off">
-                                    <input type="checkbox" id="enable_share" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </label>
-                            </label>
-                        </li>
-                        <li>
                             <label data-toggle="tooltip" data-placement="top" title="Auto change the background in an amount of time">
                                 <span>Slideshow</span>
                                 <label class="switch normal" title="on/off">
@@ -203,56 +148,6 @@
                                         <option value="1800">30 minutes</option>
                                         <option value="3600">1 hour</option>
                                     </select>
-                                </label>
-                            </label>
-                        </li>
-                        <li>
-                            <label data-toggle="tooltip" data-placement="top" title="Create a countdown timer to a specific date">
-                                <span>Countdown</span>
-                                <label class="switch normal" title="on/off">
-                                    <input type="checkbox" id="enable_countdown" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </label>
-                            </label>
-                        </li>
-                        <li class="sub-li">
-                            <label>
-                                <span>Countdown Position</span>
-                                <select id="countdown_setPosition" data-toggle="tooltip" data-placement="top" title="Change position of Countdown text">
-                                    <option>Bottom Center</option>
-                                    <option>Center</option>
-                                    <option>Top Right</option>
-                                </select>
-                            </label>
-                        </li>
-                        <li class="sub-li">
-                            <label>
-                                <span>Countdown To Time</span>
-                                <input type="datetime-local" id="countdown_setTime" data-toggle="tooltip" data-placement="top" title="Change target date-time of Countdown timer">
-                            </label>
-                        </li>
-                        <li class="sub-li">
-                            <label>
-                                <span>Countdown Text</span>
-                                <input type="text" id="countdown_setText" data-toggle="tooltip" data-placement="top" title="Enter &quot;Countdown To...&quot; text. E.g.: My Birthday">
-                            </label>
-                        </li>
-                        <li class="sub-li">
-                            <label>
-                                <span>Text Color</span>
-                                <input type="color" id="countdown_text_color" >
-                            </label>
-                        </li>
-                        <li class="sub-li">
-                            <label>
-                                <span>Countdown Shade</span>
-                                <label class="switch normal" title="on/off">
-                                    <input type="checkbox" id="countdown_background" />
-                                    <span class="slider round"></span>
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
                                 </label>
                             </label>
                         </li>
