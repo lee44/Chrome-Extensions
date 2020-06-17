@@ -14,7 +14,7 @@ pref('itag','');
 pref('sengine','');
 pref('bg_img','bg-01.jpg');
 pref('bg_color','');
-pref('bg_img_list', 25);
+pref('bg_img_list', 31);
 pref('frame_bg_list', 2);
 pref('bg_color_gif', {});
 
