@@ -15,7 +15,7 @@ body {
   user-select: none;
   overflow: hidden;
   margin: 0;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 100;
   font-family: 'neue', Helvetica, Arial, sans-serif;
   background-image: none;
@@ -895,7 +895,7 @@ footer a,
   color: white;
   font-weight: 100;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   line-height: 30px;
 }
@@ -1244,7 +1244,7 @@ ul#search-engine-list img {
   /*text-align: right;*/
   position: absolute;
   right: 25px;
-  bottom: 50px;
+  bottom: 25px;
   color: white;
   display: inline-block;
   height: 35px;
@@ -1270,7 +1270,7 @@ ul#search-engine-list img {
 }
 
 .time {
-  width: 125px;
+  width: 165px;
   display: inline-block;
   vertical-align: top;
 }
@@ -1350,11 +1350,11 @@ h1.hour {
   text-align: left;
   margin-top: 5px;
   vertical-align: top;
+  font-size: 17px;
 }
 
 .date p {
   display: inline-block;
-  font-size: 15px;
   margin: 0 5px 0 0;
 }
 
