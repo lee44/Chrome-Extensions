@@ -86,7 +86,7 @@
         } else {
             n = l
         }
-        var r = e.replace("bg-0", "").replace("bg-", "").replace(".jpg", "").replace(".gif", "");
+        var r = e.replace("bg-0", "").replace("bg-", "").replace(".png", "").replace(".gif", "");
         localStorage.setItem("last_bg", r);
         var g = true;
         if (localStorage.getItem("shuffle_background") === "yes") {
@@ -110,9 +110,9 @@
             t.push(r);
             localStorage.setItem("backgroundLoaded", JSON.stringify(t))
         }
-        var f = Object.keys(user["bg_color_gif"]).indexOf(e.replace(/\.jpg$/, ".gif"));
+        var f = Object.keys(user["bg_color_gif"]).indexOf(e.replace(/\.png$/, ".gif"));
         if (f > -1) {
-            chosenRandomBG = e.replace(/\.jpg$/, ".gif");
+            chosenRandomBG = e.replace(/\.png$/, ".gif");
             o.style.backgroundImage = "url(" + chrome.extension.getURL("/start/skin/images/" + chosenRandomBG) + ")";
             var s = Object.values(user["bg_color_gif"])[f];
             if (Math.floor(Math.random() * 100) < 10 || s.indexOf("frame") > -1 || s === "white" || s === "#ffffff") {
@@ -136,7 +136,7 @@
                 o.style.backgroundSize = "490px"
             }
         } else {
-            chosenRandomBG = e.replace(/\.gif$/, ".jpg");
+            chosenRandomBG = e.replace(/\.gif$/, ".png");
             o.style.backgroundImage = "url(" + chrome.extension.getURL("/start/skin/images/" + chosenRandomBG) + ")";
             o.style.backgroundColor = "none";
             o.style.backgroundSize = "cover";
@@ -179,19 +179,19 @@
                     }
                 }
             }
-            chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".jpg"
+            chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".png"
         } else if (localStorage.getItem("shuffle_favorites") == "yes") {
             var g = n.diff(t)[Math.floor(Math.random() * n.diff(t).length)];
-            chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".jpg"
+            chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".png"
         } else {
             if (localStorage.getItem("enable_slideshow") === "yes") {
                 var g = Number(o) + 1;
                 if (g > user["bg_img_list"]) {
                     g = 1
                 }
-                chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".jpg"
+                chosenRandomBG = "bg-" + (Number(g) < 100 ? ("0" + g).slice(-2) : g) + ".png"
             } else {
-                chosenRandomBG = "bg-" + (Number(o) < 100 ? ("0" + o).slice(-2) : o) + ".jpg"
+                chosenRandomBG = "bg-" + (Number(o) < 100 ? ("0" + o).slice(-2) : o) + ".png"
             }
         }
         e.setBackgroundGIFOrJPG(chosenRandomBG)
@@ -201,9 +201,9 @@
     } else {
         var n = localStorage.getItem("last_bg");
         if (n) {
-            chosenRandomBG = "bg-" + (Number(n) < 100 ? ("0" + n).slice(-2) : n) + ".jpg"
+            chosenRandomBG = "bg-" + (Number(n) < 100 ? ("0" + n).slice(-2) : n) + ".png"
         } else {
-            chosenRandomBG = "bg-01.jpg"
+            chosenRandomBG = "bg-01.png"
         }
         e.setBackgroundGIFOrJPG(chosenRandomBG)
     }

@@ -1,4 +1,5 @@
 {
+   
    "background": {
       "persistent": true,
       "scripts": [ "/start/external/jquery-2.1.1.min.js", "/start/search/search-engines.js", "/start/chrome/settings.js", "/start/common/prefs-sys.js", "/start/chrome/utils.js", "/start/chrome/common.js", "/start/chrome/setup.js", "/start/chrome/analytics.js" ]

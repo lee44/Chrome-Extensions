@@ -2,7 +2,7 @@ pref('xlp_pers_guid','');
 pref('guid','');
 pref('firstRun',true);
 pref('firstRunDomain', 'freeaddon.com');
-pref('firstRunLandingPage', 'http://freeaddon.com/final-fantasy-7-remake-wallpaper-hd-new-tab/');
+pref('firstRunLandingPage', '');
 pref('firstVer','0');
 pref('lastVer','0');
 pref('ls_ts','0');
@@ -14,7 +14,7 @@ pref('itag','');
 pref('sengine','');
 pref('bg_img','bg-01.jpg');
 pref('bg_color','');
-pref('bg_img_list', 31);
+pref('bg_img_list', 20);
 pref('frame_bg_list', 2);
 pref('bg_color_gif', {});
 
